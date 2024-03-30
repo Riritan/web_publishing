@@ -1,0 +1,144 @@
+<!DOCTYPE HTML> <!-- 이 문서가 HTML임을 알리는 문장 -->
+<html lang="ko"> <!-- 여기에 html문서가 들어간다를 알리는 태그 -->
+    <head>
+        <!-- 웹사이트 설정, 타이틀, ... => 사이트에는 보여지지 않는다. -->
+        <title>웹 퍼블리싱 공부</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./web.css"> <!-- 1. css파일 불러오기 -->
+        <style>
+            .여러개 {
+                background-color: navajowhite; /* 2. style태그 이용 */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 보여지는 콘텐츠가 들어가는 부분 -->
+        <strong>header</strong>
+        <h1>1</h1>
+        <h2>2</h2>
+        <h3>3</h3>
+        <h4>4</h4>
+        <h5>5</h5>
+        <h6>6</h6>
+
+
+        <strong>a</strong> <br>
+        <a href="#table">드릅게 많이 쓴다</a>
+        <br>
+
+        <strong>unorderd list</strong>
+        <ul>
+            <!-- UnOrdered List -->
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <ul>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <ul>
+                    <li>a1</li>
+                    <li>b2</li>
+                    <li>c3</li>
+                </ul>
+            </ul>
+
+            <ol>
+                <li>12</li>
+                <li>23</li>
+                <li>34</li>
+            </ol>
+        </ul>
+        
+        <strong>ordered list</strong>
+        <ol>
+            <!-- Ordered List -->
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+
+            <ul>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ul>
+        </ol>
+
+        <strong>table</strong>
+        <table border="1"  id="table">
+            <!-- table row -->
+                <!-- <tr></tr>  -->
+
+            <!-- table head -->
+                <!-- <th></th>  -->
+
+            <!-- table d?? -->
+                <!-- <td></td>  -->
+            <thead>
+                <tr>
+                    <th>분류1</th>
+                    <th>분류2</th>
+                </tr>
+            </thead>
+                <tbody>
+                <tr>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <strong>pre</strong>
+        <pre>
+            원래 이 안에 엔터를 쳐도 반영이 안돼요
+            이런식으로 해도 반영이 안됨
+        </pre>
+
+        <strong>span</strong> <br>
+        <span>span 태그</span>
+        <span>span태그는 기본값이 display: inline이다.</span>
+        <span>display: inline은 width, height속성이 먹질 않는다.</span>
+        <br>
+        <br>
+
+        <strong>div</strong> <br>
+        <div>div 태그</div>
+        <div>div태그는 기본값이 display: block이다.</div>
+        <div>display의  inline과 block속성을 다 가지고 싶다 => display: inline-block</div>
+        <br>
+
+        <strong>서체</strong> <br>
+        <i>기울이기</i>
+        <u>밑줄</u>
+        <del>취소선</del>
+        <br>
+        <br>
+
+        <strong>태그 속성</strong>
+        <div class="여러개" id="한개" onclick="">1</div>
+        <div class="여러개" >1</div>
+
+        <!-- 태그 안에 내용이 들어가므로 여는태그, 닫는 태그로 나뉘어진다. -->
+        <div>
+            여는태그, 닫는태그
+        </div>
+        <br>
+
+        <strong >img</strong> <br>
+        <!-- img태그는 안에 내용이 필요없으니까 태그에 여는거 닫는거 둘 다 있다. -->
+        <img src="https://dimg.donga.com/wps/SPORTS/IMAGE/2020/02/21/99814770.2.jpg" alt="채종협"  style="width: 10%;" title="채종협"/> <br>
+        <img src="URL, 경로, ./img.png, C:\Users\, " alt="공부용 이미지"  title="공부용 이미지"/>
+
+        <iframe src="https://tv.naver.com/v/26371551" frameborder="0"></iframe>
+        <br>
+        <br>
+
+        <strong>CSS기초</strong> <br>
+        <div >css를 부르는 방법</div>
+        <ol>
+            <li>css파일 불러오기</li>
+            <li>style태그 이용</li>
+            <li style="border-bottom: 1px solid grey; padding: 10px;">인라인 style속성</li>
+        </ol>
+    </body>
+</html>
